@@ -1,0 +1,55 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration:none ;
+    list-style: none;
+    box-sizing: border-box;
+}
+#registrationForm{
+    margin-top: 17%;
+    text-align: center;
+align-items: center;    
+font-size: 40px;
+    height: 100vh; /* Ensure the page takes up the full viewport height */
+        }
+
+
+body{
+   
+    background-image: url(exercise-weights-iron-dumbbell-with-extra-plates.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150vh;
+    
+}
+
+h1{text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-top: 12px;
+    color: white;
+}
+
+.textbox-container {
+    text-align: center;
+}
+
+.textbox {
+    width: 300px; /* Adjust the width as needed */
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label{
+    background-color: white;
+    ;
+}
+
+button:hover{
+    color: white;
+    background-color: gray;
+}

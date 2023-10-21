@@ -1,0 +1,103 @@
+body{
+    font-family: montserrat;
+    background-image: url(pexels-anush-gorak-1229356.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+ #label1{
+    text-align: left;
+    align-items: left;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#label2{
+    text-align: left;
+    align-items: left;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+    margin-top: 20px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+}
+
+.textbox-container {
+    border: 4px solid #000;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the last value for background opacity */
+    padding: 50px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textbox {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    text-decoration: dotted;
+    margin-top: 10px;
+}
+
+.radio-container {
+    margin-left: 0px;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+
+
+
+.radio-label{
+    text-transform: lowercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: none;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+
+.button-container{
+    align-items: center;
+    text-align: center;
+    justify-content: center
+}
+.button-container button {
+    background-color:  white; /* Replace "your-color" with your desired background color */
+    color: black; /* Text color, adjust as needed */
+    border: 4px;/* Remove the default button border */
+    padding: 20px 30px; /* Adjust padding to style the button size */
+    border-radius: 5px; /* Add rounded corners to the button */
+    
+}
+
+.button-container button:hover{
+    color: white;
+    background-color: black;
+}

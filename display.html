@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="customers.css">
+    <title>Data Display</title>
+    <style>
+        
+            body{
+                font-family: montserrat;
+                background-image: url(GYM.jpg);
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                }
+        /* Add a border to the table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Display</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody id="dataBody">
+            <!-- Data will be inserted here using JavaScript -->
+        </tbody>
+    </table>
+
+    <script>
+        // Fetch data from the /display-data route
+        fetch('/getData')
+            .then(response => response.json())
+            .then(data => {
+                const dataBody = document.getElementById('dataBody');
+                 // Define a mapping for gender values
+            const genderMap = {
+                option1: 'Male',
+                option2: 'Female'
+            };
+                // Loop through the data and populate the table
+                data.forEach(entry => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${entry.first_name}</td>
+                        <td>${entry.last_name}</td>
+                        <td>${genderMap[entry.gender]}</td> <!-- Map gender value -->
+                        <td>${entry.email}</td>
+                        <td>${entry.phone}</td>
+                        <td>${entry.datetime}</td>
+                    `;
+                    dataBody.appendChild(row);
+                });
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+</body>
+</html>
+

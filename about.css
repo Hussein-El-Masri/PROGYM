@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 20px 0;
+    font-family: 'Pacifico', cursive;
+    background-color: rgb(90, 114, 119); /* Background color for the entire page */   
+  
+ 
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    margin: 20px 0; /* Add vertical space between containers */
+}
+ 
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh; /* Full viewport height */
+    margin: 20px 0; /* Add vertical space between containers */
+}
+ 
+.upperA{
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+.in{
+   text-align: center;}
+
+
+p{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    text-decoration: wavy;
+    font-size: larger;
+    color: black;
+    text-transform: uppercase;
+}
+.image {
+    width: 50%; /* Image takes up half of the page width */
+    height: 650px;
+}
+
+.text {
+    background-color: none; /* Semi-transparent white background for text */
+    padding: 20px;
+}
+.upper{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+
+ul {
+    list-style: none; /* Remove default list markers */
+}
+
+ul li::before {
+    content: "★"; /* You can replace this with any special character or symbol */
+    margin-right: 8px; /* Adjust the spacing between the symbol and the text */
+}
+ 
+ul li{
+    text-transform: uppercase;
+
+}
+.lower{
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.text{
+    line-height: 1.6;
+}
+
+ul po{
+    align-items: center;
+}
+
+.lowerF{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.finish{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic ;
+    font-size: 35px;
+    text-decoration:overline underline wavy;
+}
+
+

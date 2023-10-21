@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration:none ;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0.5 for 50% transparency) */
+    animation: backgroundChange 30s infinite linear; /* Change images every 180 seconds (3 minutes) */
+
+}
+
+@keyframes backgroundChange {
+    0%, 100% {
+        background-image: url('progym1.jpg'); /* Initial background image */
+    }
+    33% {
+        background-image: url('ROSAA.jpg'); /* Change to image2 at 33% of animation */
+    }
+    66% {
+        background-image: url('progym.jpg'); /* Change to image3 at 66% of animation */
+    }
+}
+
+#check{
+    display: none;
+}
+
+nav{
+    font-size: 36px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+    color: #fff; /* Text color (white) */
+    padding: 10px 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+    height: 100px;
+    width: 100%;
+    
+}
+
+label.logo{
+    color: black;
+    font-size: 50px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    position: absolute;
+    background-color: white;
+    top: 20px;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 2px 2px rgba(255, 255, 255, 0.1);
+
+
+    background-image: url('logooooo.jpg'); /* Replace 'your-image-url.png' with the actual image URL */
+    background-size: 80px; /* Adjust the size of the image */
+    background-repeat: no-repeat;
+    background-position: left center; /* Adjust the position of the image */
+    padding-left: 100px; /* Add padding to make space for the image */
+}
+
+a:hover,a.active{
+    background: gray;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+} 
+
+nav ul li{
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 5px; 
+}
+
+a.active{
+    background: gray;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+/* Add hover effect to links within .hov */
+.hov li:hover a {
+    color: black;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+}
+
+
+nav ul li a{
+    font-size: 16px;
+}  
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width:150px;
+        height: 100vh;
+        background: gray;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 100px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+/* Style the content container */
+.content-container {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Text color */
+}
+
+/* Style text elements inside the content container */
+.content-container h1 {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.content-container h2 {
+    font-size: 25px;
+    font-weight:lighter;
+    margin-bottom: 20px;
+}
+
+
+.color-text{
+    color:gray;
+}
+
+.content-container p {
+    font-size: 13px;
+}
+
+
+/*img{
+    width: 300px;
+    height: auto;
+    border-radius: 20px; 
+    filter: brightness(1.2); 
+    transform: rotate(-5deg); 
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}*/
+
+.opening-hours-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+    width: 100%; /* Adjust the width as needed */
+}
+
+.opening-hours-box {
+    background-color: gray;
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    width: 250px; /* Set the width as needed */
+}
+
+.opening-hours h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; 
+
+}
+
+.opening-hours ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.opening-hours li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.opening-hours li span {
+    font-weight: bold;
+    margin-right: 10px;
+    display: inline-block;
+    width: 100px;
+}

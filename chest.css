@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 20px 0;
+    font-family: 'Pacifico', cursive;
+    background-color: rgb(95, 143, 153); /* Background color for the entire page */
+ 
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    margin: 20px 0; /* Add vertical space between containers */
+}
+ 
+.image {
+    width: 50%; /* Image takes up half of the page width */
+    height: 650px;
+}
+
+p{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    text-decoration: wavy;
+    font-size: larger;
+    color: black;
+    text-transform: uppercase;
+}
+
+h1{
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+li{
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+
+.caption {
+    margin-top: 10px;
+
+}
